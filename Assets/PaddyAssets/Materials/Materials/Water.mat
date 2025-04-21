@@ -45,7 +45,7 @@ Material:
     - _Depth: 10
     - _DepthFade: 37.47
     - _Lerp: 0.277
-    - _Normal_Strength: 0.4
+    - _Normal_Strength: -0.11
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Reflection_Refraction: 0.12
