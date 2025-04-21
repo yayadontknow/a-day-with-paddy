@@ -4,7 +4,7 @@ public class CoinCollector : MonoBehaviour
 {
     public AudioClip coinSound;       // Drag your sound clip here in the Inspector
     private AudioSource audioSource;
-
+    public VendingMachine vendingMachine;
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -24,5 +24,7 @@ public class CoinCollector : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         Destroy(coin);
+        vendingMachine.AddCoin();
+        Debug.Log("Money + 1");
     }
 }
