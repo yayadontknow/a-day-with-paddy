@@ -7,7 +7,7 @@ public class SkyboxChanger : MonoBehaviour
 
     private int currentIndex = 0;
     private float timer = 0f;
-    private float interval = 30f; // Switch every 30 seconds
+    private float interval = 100f; // Switch every 30 seconds
 
     void Start()
     {

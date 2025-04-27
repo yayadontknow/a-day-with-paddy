@@ -6,7 +6,7 @@ public class UpwardMotionDetector : MonoBehaviour
 {
     public Transform leftHandController;
     public Transform rightHandController;
-    public float upwardThreshold = 1.5f;
+    public float upwardThreshold = 9f;
 
     public GameObject fireflyPrefab; // Firefly prefab reference
     public float cooldownTime = 0.5f;

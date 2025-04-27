@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class HeadsetSocket : MonoBehaviour
 {
     public bool headsetAttached = false;
@@ -34,6 +34,17 @@ public class HeadsetSocket : MonoBehaviour
     {
         if (other.CompareTag("Headset") && headsetAttached)
         {
+            StartCoroutine(DelayedHeadsetExit(other));
+        }
+    }
+
+    private IEnumerator DelayedHeadsetExit(Collider other)
+    {
+        yield return new WaitForSeconds(1f);
+
+        // Double-check if headset is still outside after 1 second
+        if (!Physics.CheckSphere(other.transform.position, 0.1f, LayerMask.GetMask("Headset"))) // Adjust logic/layer as needed
+        {
             headsetAttached = false;
 
             // Detach headset
@@ -45,7 +56,8 @@ public class HeadsetSocket : MonoBehaviour
                 audioSource.Stop();
             }
 
-            Debug.Log("Headset detached and audio stopped.");
+            Debug.Log("Headset detached and audio stopped after delay.");
         }
     }
+
 }

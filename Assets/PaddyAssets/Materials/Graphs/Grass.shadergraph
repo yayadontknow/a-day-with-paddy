@@ -2753,8 +2753,8 @@
     "m_ObjectId": "1ad171a2eed64c0aa35841d5b1ee17ad",
     "m_Title": "Left Hand Push Grass",
     "m_Position": {
-        "x": 4553.00048828125,
-        "y": -1170.000244140625
+        "x": 4553.0,
+        "y": -1170.0
     }
 }
 
@@ -5334,7 +5334,7 @@
     "m_ObjectId": "59ecb05481c34016a2a19dca3041abc8",
     "m_Title": "Right Hand Push Grass",
     "m_Position": {
-        "x": 4532.00048828125,
+        "x": 4532.0,
         "y": -2208.0
     }
 }
@@ -6917,8 +6917,8 @@
     "m_ObjectId": "86271525fed047b49a63c9135e542b20",
     "m_Title": "Grass color",
     "m_Position": {
-        "x": 5550.00048828125,
-        "y": 845.0003051757813
+        "x": 5550.0,
+        "y": 845.0
     }
 }
 
@@ -9773,8 +9773,8 @@
     "m_ObjectId": "d7257bd672ff484c9d6e9f7a5c210e98",
     "m_Title": "Final comp",
     "m_Position": {
-        "x": 7767.00048828125,
-        "y": -12.999717712402344
+        "x": 7767.0,
+        "y": -13.0
     }
 }
 
@@ -11009,7 +11009,7 @@
     "m_Title": "Grass Waving Animation",
     "m_Position": {
         "x": 4462.0,
-        "y": -210.99948120117188
+        "y": -211.0
     }
 }
 
